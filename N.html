@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد حب سعيد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- صفحة إدخال الرمز -->
+        <div class="code-entry">
+            <h1>  الرمز؟ </h1>
+            <input type="text" id="code" placeholder="أدخل الرمز هنا">
+            <button onclick="checkCode()"> 🐥 </button>
+        </div>
+        
+        <!-- المحتوى المخفي الذي يظهر بعد إدخال الرمز الصحيح -->
+        <div id="content" class="hidden">
+            <h2>عيد حب سعيد!</h2>
+            <p>مرحبًا بك في موقع الحب!</p>
+            
+            <!-- القلوب في الأسفل -->
+            <div class="heart" id="heart"></div>
+        </div>
+    </div>
+
+    <script>
+        function checkCode() {
+            const enteredCode = document.getElementById('code').value;
+            const correctCode = '1';  // الرمز المطلوب
+            if (enteredCode === correctCode) {
+                document.querySelector('.code-entry').style.display = 'none';
+                document.getElementById('content').classList.remove('hidden');
+            } else {
+                alert('رمز خاطئ! حاول مرة أخرى.');
+            }
+        }
+    </script>
+</body>
+</html>

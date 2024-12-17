@@ -1,0 +1,92 @@
+/* إعادة تعيين الإعدادات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* إعدادات عامة للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(248, 158, 158);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* محيط الصفحة */
+#wrapper {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* تنسيق شاشة إدخال الرمز */
+.code-entry {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.code-entry h1 {
+    color: #c595c5;
+    font-size: 24px;
+}
+
+/* تنسيق حقل الإدخال */
+#code {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    width: 80%;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+}
+
+/* تنسيق الزر */
+button {
+    padding: 10px 20px;
+    background-color: #d48383;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* تأثير hover للزر */
+button:hover {
+    background-color: #ffbee9;
+}
+
+/* إخفاء المحتوى بدايةً */
+.hidden {
+    display: none;
+}
+
+/* تنسيق المحتوى بعد إدخال الرمز الصحيح */
+#content {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* تنسيق العناوين */
+h2 {
+    color: #4b3b4b;
+    font-size: 32px;
+    margin-top: 11px;
+}
+
+/* تنسيق النصوص */
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
